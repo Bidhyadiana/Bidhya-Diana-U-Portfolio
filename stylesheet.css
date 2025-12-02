@@ -571,6 +571,7 @@ body{
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(359px, auto));
+    margin-left: 60px;
 }
 .row{
     position: relative;
@@ -586,7 +587,7 @@ body{
 }
 .row img{
     width: 100%;
-    height: auto;
+    height: 400px;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -612,14 +613,14 @@ body{
     color: #000;
     font-size: 30px;
     font-weight: 600;
-    margin: 20px;
+    margin: 10px;
 }
 .layer p{
     color: #000;
     font-size: 1rem;
     line-height: 1.8;
     border-left: 10%;
-    padding-top: 42px;
+    
     font-size: 20px;
 }
 .layer i{
@@ -823,4 +824,46 @@ body{
 }
 .pro img:hover{
         transform: translateY(-10px);
+}
+
+
+
+
+/* Hide menu toggle in desktop */
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: block;
+        
+    }
+
+    .navbar {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.4s;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 15px 0;
+        font-size: 20px;
+    }
 }

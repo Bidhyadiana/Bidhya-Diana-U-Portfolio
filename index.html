@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </head>
 <body>
     <header class="header">
+
         <a href="#" class="logo">Portfolio</a>
         <nav class="navbar">
             <a href="#home" style="--i:1"class="active">Home</a>
@@ -67,7 +69,7 @@
                         Every design is tailored for usability and flow.
                         I keep up with modern design trends and tools.
                         Tools: Figma, Adobe XD</h3></p>
-                    <a href="#" class="read">lern more</a>
+                    <a href="#project" class="read">lern more</a>
                 </div>
                 <div>
                     <i class='bx bx-crop' style='color:#00eeff'></i>
@@ -186,24 +188,62 @@
         <div id="portfolio" id="project">
             <div class="main-text" id="project">
             <h2 class="sub-title">Latest<span>Project</span></h2>
-            <div class="portfolio-content">
+            <div class="portfolio-content" style="margin-bottom: 50px;">
             
                 <div class="row">
                     <img src="front.png">
                     <div class="layer">
-                        <h4>Frontend Development</h4>
+                        <h4>Course Login Page</h4>
                         <p>This project is a stylish and responsive student login page created for SK Tutor, an educational platform. It features a sleek dark-themed design with a custom background image for visual appeal.Built using HTML, CSS, and a basic JavaScript validation function (to be completed)To provide a basic but attractive user interface for students to log in and access learning content</p>
-                        <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></a>
+                        <!-- <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></a> -->
                     </div>
                 </div>
                 <div class="row">
                     <img src="3y.png">
                     <div class="layer">
                         <h4>Wavelet Transform Based Multi Focus Image Fusion</h4>
-                        <p>This project implements a Multi-focus Image Fusion system using two popular image processing techniques —Discrete Wavelet Transform(DWT) and Stationary Wavelet Transform (SWT).It allows users to upload two input images with different focus areas, and fuses them into a single, sharp and focused output image.In real-world photography, especially with low-end cameras or macro photography, it's difficult to get all areas of an object in focus simultaneously. This system solves that by intelligently combining the clear (in-focus) regions of both images</p>
-                        <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></a>
+                        <p>This project implements a Multi-focus Image Fusion system using two popular image processing techniques —Discrete Wavelet Transform and Stationary Wavelet Transform.It allows users to upload two input images with different focus areas, and fuses them into a single, sharp and focused output image.In real-world photography, especially with low-end cameras or macro photography, it's difficult to get all areas of an object in focus simultaneously. This system solves that by intelligently combining the clear (in-focus) regions of both images</p>
+                        
                     </div>
                 </div>
+            </div>
+            <div class="portfolio-content" style="margin-bottom: 50px;">
+                <div class="row">
+                    <img src="restaurant.png">
+                    <div class="layer">
+                        <h4 style="color: white;">Restaurant Website</h4>
+                        <p>This project showcases a modern and visually appealing restaurant website interface designed with a clean layout and smooth navigation. The homepage highlights popular dishes with high-quality images, ratings, and estimated delivery times, giving users a clear and engaging food-browsing experience. The site also features well-organized categories like Biryani, Fast Foods, and Snacks, ensuring easy exploration. The design focuses on user-friendly structure, attractive visuals, and a seamless viewing experience, making it suitable for real-world food delivery platforms.</p>
+                        <!-- <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></a> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="chat.png">
+                    <div class="layer">
+                        <h4>Chat Application</h4>
+                        <p>This video showcases my latest work building a real-time chat application using Node.js, Express, and Socket.io. From designing the backend architecture to implementing secure authentication and real-time messaging, every step was a deep dive into full-stack development and modern web technologies. The project features a clean, responsive UI inspired by WhatsApp, with seamless message delivery and user management.</p>
+                        <!-- <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="Healthcare.png">
+                    <div class="layer">
+                        <h4>Health Care</h4>
+                        <p>This healthcare mobile UI/UX design focuses on creating a seamless and user-friendly experience for patients seeking medical support. It includes essential features such as doctor search, specialist categories, favorite doctors, appointment booking, and real-time chat availability — all arranged with clear hierarchy and intuitive navigation. The side menu provides easy access to Home, Profile, and Appointment sections, ensuring smooth user flow across screens. Each doctor card displays key details with quick-action buttons, enhancing efficiency and reducing user effort.</p>
+                        <!-- <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></a> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="todo.png">
+                    <div class="layer">
+                        <h4>To-Do List</h4>
+                        <p>This interactive to-do list features a clean, modern UI with a centered card layout against a geometric blue background. Users can easily add tasks with a priority selector, which visually highlights each task as High, Medium, or Low for better organization. The table layout provides a clear structure with options to mark tasks as done using checkboxes and remove them with a delete icon. Each action updates the list instantly, making task management simple and efficient. Overall, the design delivers a smooth and visually appealing experience for daily productivity.</p>
+                        <!-- <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></a> -->
+                    </div>
+                </div>
+            </div>   
+            
             </div>
         </div>
     </section>
@@ -212,6 +252,8 @@
         <h3><span>Certificates</span></h3>
             <img src="cer13.jpg">
             <img src="cer14.jpg">
+            <img src="code.png">
+            <img src="cer16.png">
             <img src="cer12.jpg">
             <img src="cer7.jpg">
             <img src="cer1.jpg">
@@ -224,7 +266,7 @@
             <img src="cer10.jpg">
             <img src="cer11.jpg">
             <img src="cer15.png">
-            <img src="cer16.png">
+            
             <img src="cer17.png">
             <img src="cer19.png">
         </div>
@@ -261,5 +303,11 @@
     </div>
     <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
     <script src="script.js"></script>
+    <script>
+function toggleMenu() {
+    document.querySelector('.navbar').classList.toggle('active');
+}
+</script>
+
 </body>
 </html>
